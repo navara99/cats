@@ -9,3 +9,5 @@ const breedDetails = function(breed) {
 
 const bombay = breedDetails('Bombay');
 console.log(bombay);
+
+module.exports = breedDetails;

@@ -1,4 +1,5 @@
 const fs = require('fs');
+const breedDetails = require('./syncBreeds');
 
 const displayData = (data)=> {
   console.log('Return Value: ', data);
@@ -13,3 +14,5 @@ const breedDetailsFromFile = function(breed, callback) {
 };
 
 breedDetailsFromFile('Bombay', displayData);
+
+module.exports = breedDetailsFromFile;
